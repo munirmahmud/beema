@@ -2,12 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import logo from '../../assets/logo.png';
 import { theme } from '../../theme';
-import { Margin } from '../Margin';
 
 export const Logo = () => {
     return (
         <LogoContainer>
-            <Margin direction="vertical" margin="8em" />
             <LogoImg src={logo} alt="Beema" />
             <LogoText>Beema</LogoText>
         </LogoContainer>

@@ -2,12 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 import heroBg from '../../assets/hero-bg.jpg';
 import { Logo } from '../../components/Logo';
+import { Margin } from '../../components/Margin';
 
 export const TopSection = () => {
     return (
         <TopContainer>
             <BackgroundFilter>
+                <Margin direction="vertical" margin="8em" />
+
                 <Logo />
+
+                <Margin direction="vertical" margin="2em" />
+
+                <HeroText>
+                    Software Development <br />
+                    From the best in the industry
+                </HeroText>
+                
             </BackgroundFilter>
         </TopContainer>
     )
@@ -27,4 +38,12 @@ const BackgroundFilter = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+`;
+
+const HeroText = styled.h1`
+    font-size: 43px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
 `;
