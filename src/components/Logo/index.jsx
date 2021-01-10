@@ -28,7 +28,7 @@ const LogoImg = styled.img`
 `;
 
 const LogoText = styled.h1`
-    font-size: ${({inline}) => inline ? '24px' : '52px'};
+    font-size: ${({inline}) => inline ? '20px' : '52px'};
     color:  ${({inline}) => inline ? theme.white : theme.primary};
     font-weight: ${({inline}) => inline ? '700' : '900'};
     line-height: 61px;

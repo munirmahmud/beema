@@ -11,12 +11,12 @@ export const Button = (props) => {
 };
 
 const ButtonWrapper = styled.button`
-    padding: 8px 18px;
+    padding: ${({small}) => small ? '3px 12px' : '8px 18px'};;
     border-radius: 5px;
     background-color: ${theme.primary};
     color: ${theme.white};
     font-weight: 700;
-    font-size: 20px;
+    font-size: ${({small}) => small ? '14px' : '20px'};
     line-height: 26px;
     outline: none;
     border: 2px solid transparent;
