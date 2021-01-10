@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { TopSection } from './topSection';
+import { Hero } from './Hero';
+import { ServicesSection } from './ServicesSection';
 
 export const Home = () => {
     return (
         <PageContainer>
-            <TopSection />
+            <Hero />
+            <ServicesSection />
         </PageContainer>
     );
 };
