@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import heroBg from '../../assets/hero-bg.jpg';
 import { Button } from '../../components/Button';
+import { DownArrow } from '../../components/FontAwesomeIcon/DownArrow';
 import { Logo } from '../../components/Logo';
 import { Margin } from '../../components/Margin';
 
@@ -13,7 +14,7 @@ export const TopSection = () => {
 
                 <Logo />
 
-                <Margin direction="vertical" margin="2em" />
+                <Margin direction="vertical" margin="4em" />
 
                 <HeroText>
                     Software Development <br />
@@ -23,6 +24,11 @@ export const TopSection = () => {
                 <Margin direction="vertical" margin="2em" />
 
                 <Button>Start your Project</Button>
+
+                <DownArrowWrapper>
+                    <DownArrow />
+                </DownArrowWrapper>
+
                 
             </BackgroundFilter>
         </TopContainer>
@@ -34,6 +40,7 @@ const TopContainer = styled.div`
     height: 100vh;
     padding: 0;
     background-image: url(${heroBg});
+    position: relative;
 `;
 
 const BackgroundFilter = styled.div`
@@ -51,4 +58,11 @@ const HeroText = styled.h1`
     color: #fff;
     line-height: 50px;
     text-align: center;
+`;
+
+const DownArrowWrapper = styled.div`
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 `;
