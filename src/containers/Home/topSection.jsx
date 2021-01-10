@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import heroBg from '../../assets/hero-bg.jpg';
+import { Button } from '../../components/Button';
 import { Logo } from '../../components/Logo';
 import { Margin } from '../../components/Margin';
 
@@ -18,6 +19,10 @@ export const TopSection = () => {
                     Software Development <br />
                     From the best in the industry
                 </HeroText>
+
+                <Margin direction="vertical" margin="2em" />
+
+                <Button>Start your Project</Button>
                 
             </BackgroundFilter>
         </TopContainer>
