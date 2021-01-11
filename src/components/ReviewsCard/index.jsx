@@ -58,15 +58,14 @@ const Line = styled.span`
     height: 1px;
     background: #CDCDCD;
     margin-top: auto;
-    margin-bottom: 5.2em;
+    margin-bottom: .8em;
 `;
 
 const UserWrapper = styled.div`
-    position: absolute;
-    bottom: 2.5em;
-    left: 2.2em;
     display: flex;
     align-items: center;
+    margin-left: 1em;
+    margin-bottom: 1.2em;
 `;
 
 const UserImg = styled.img`

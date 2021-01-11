@@ -8,7 +8,7 @@ import { Logo } from '../../components/Logo';
 import { Margin } from '../../components/Margin';
 import { Navbar } from '../../components/Navbar';
 
-export const Hero = () => {
+export const HeroSection = () => {
     const scrollToNextSection = () => {
         scroller.scrollTo('services', {smooth: true, duration: 1500});
     };

@@ -1,17 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Margin } from '../../components/Margin';
-import { Hero } from './Hero';
-import { Reviews } from './Reviews';
+import { AboutSection } from './AboutSection';
+import { HeroSection } from './HeroSection';
+import { ReviewsSection } from './ReviewsSection';
 import { ServicesSection } from './ServicesSection';
 
 export const Home = () => {
     return (
         <PageContainer>
-            <Hero />
+            <HeroSection />
             <ServicesSection />
             <Margin direction="vertical" margin="5em" />
-            <Reviews />
+            <ReviewsSection />
+            <AboutSection />
         </PageContainer>
     );
 };

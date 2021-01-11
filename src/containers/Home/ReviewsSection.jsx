@@ -6,12 +6,12 @@ import styled from 'styled-components';
 import img1 from '../../assets/profiles/1.jpg';
 import img2 from '../../assets/profiles/2.jpg';
 import img3 from '../../assets/profiles/3.jpeg';
-import { ReviewsCard } from '../../components/ReviewsCard/';
+import { ReviewsCard } from '../../components/ReviewsCard';
 import { Title } from '../../components/Title';
 
 
 
-export const Reviews = () => {
+export const ReviewsSection = () => {
     return (
         <ReviewsContainer>
             <Title>What others are saying <br />about us</Title>
