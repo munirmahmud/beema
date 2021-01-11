@@ -3,8 +3,12 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import React from 'react';
 import { Element } from 'react-scroll';
 import styled from 'styled-components';
+import img1 from '../../assets/profiles/1.jpg';
+import img2 from '../../assets/profiles/2.jpg';
+import img3 from '../../assets/profiles/3.jpeg';
 import { ReviewsCard } from '../../components/ReviewsCard/';
 import { Title } from '../../components/Title';
+
 
 
 export const Reviews = () => {
@@ -15,16 +19,16 @@ export const Reviews = () => {
             <StyledCarouselProvider naturalSlideWidth={200} naturalSlideHeight={185} totalSlides={4} visibleSlides={2}>
                 <Slider>
                     <StyledSlide index={0}>
-                        <ReviewsCard />
+                        <ReviewsCard text=" I very much enjoyed working with Beema and the team - they have an excellent grasp of their subject, and have created something great for us." name="John coner" imgUrl={img1} />
                     </StyledSlide>
                     <StyledSlide index={1}>
-                        <ReviewsCard />
+                        <ReviewsCard text=" I very much enjoyed working with Beema and the team - they have an excellent grasp of their subject, and have created something great for us." name="Megan borguer" imgUrl={img2} />
                     </StyledSlide>
                     <StyledSlide index={2}>
-                        <ReviewsCard />
+                        <ReviewsCard text=" I very much enjoyed working with Beema and the team - they have an excellent grasp of their subject, and have created something great for us." name="John coner" imgUrl={img3} />
                     </StyledSlide>
                     <StyledSlide index={3}>
-                        <ReviewsCard />
+                        <ReviewsCard text=" I very much enjoyed working with Beema and the team - they have an excellent grasp of their subject, and have created something great for us." name="Megan borguer" imgUrl={img2} />
                     </StyledSlide>
                 </Slider>
                 <StyledDotGroup />
@@ -74,18 +78,4 @@ const StyledDotGroup = styled(DotGroup)`
             background-color: #C4C4C4;
         }
     }
-`;
-
-const QuoteIcon = styled.div`
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    color: #D1D1D1;
-    font-size: 45px;
-`;
-
-const ReviewText = styled.p`
-    font-size: 20px;
-    line-height: 147.2%;
-    color: #585858;
 `;
