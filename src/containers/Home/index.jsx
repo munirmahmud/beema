@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Margin } from '../../components/Margin';
 import { Hero } from './Hero';
+import { Reviews } from './Reviews';
 import { ServicesSection } from './ServicesSection';
 
 export const Home = () => {
@@ -8,6 +10,8 @@ export const Home = () => {
         <PageContainer>
             <Hero />
             <ServicesSection />
+            <Margin direction="vertical" margin="5em" />
+            <Reviews />
         </PageContainer>
     );
 };
