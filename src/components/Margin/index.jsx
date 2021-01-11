@@ -8,7 +8,11 @@ const MarginHorizontal = styled.span`
 
 const MarginVertical = styled.span`
     display: flex;
-    height: ${({margin}) => typeof margin === 'string' ? margin: `${margin}px`};
+    height: ${({margin}) => typeof margin === 'string' ? margin: `${margin}em`};
+
+    @media screen and (max-width: 767.98px) {
+        height: ${({margin}) => typeof margin === 'string' ? margin: `${margin / 2}em`};
+    }
 `;
 
 const Margin = (props) => {

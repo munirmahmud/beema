@@ -11,7 +11,7 @@ export const AboutSection = (props) => {
         <AboutContainer>
             <Title>More about Beema</Title>
 
-            <Margin direction="vertical" margin="6em" />
+            <Margin direction="vertical" margin={6} />
 
             <AboutContentWrapper>
                 <AboutText>
@@ -35,25 +35,59 @@ const AboutContainer = styled(Element)`
     flex-direction: column;
     align-items: center;
     margin-top: 15em;
+
+    @media screen and (max-width: 1199.98px) {
+        max-width: 100%;
+        margin-top: 5em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 `;
 
 const AboutContentWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 767.98px) {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 `;
 
 const AboutText = styled.div`
     font-size: 28px;
-    line-height: 33px;
     color: #2F2F2F;
 
     p {
+        line-height: 33px;
         margin-bottom: 1em;
+    }
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 18px;
+
+        p {
+            margin-bottom: .6em;
+            line-height: 28px;
+        }
     }
 `;
 
 const AboutImg = styled.img`
     max-width: 796px;
     height: auto;
+
+    @media screen and (max-width: 1199.98px) {
+        max-width: 500px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 2em;
+        max-width: 100%;
+    }
 `;

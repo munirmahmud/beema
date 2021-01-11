@@ -18,18 +18,18 @@ export const HeroSection = () => {
             <TopContainer>
                 <BackgroundFilter>
                     <Navbar />
-                    <Margin direction="vertical" margin="8em" />
+                    <Margin direction="vertical" margin={8} />
 
                     <Logo />
 
-                    <Margin direction="vertical" margin="4em" />
+                    <Margin direction="vertical" margin={4} />
 
                     <HeroText>
                         Software Development <br />
                         From the best in the industry
                     </HeroText>
 
-                    <Margin direction="vertical" margin="2em" />
+                    <Margin direction="vertical" margin={4} />
 
                     <Button>Start your Project</Button>
 
@@ -48,6 +48,10 @@ const TopContainer = styled.div`
     padding: 0;
     background-image: url(${heroBg});
     position: relative;
+
+    @media screen and (max-width: 767.98px) {
+        height: 80vh;
+    }
 `;
 
 const BackgroundFilter = styled.div`
@@ -65,6 +69,11 @@ const HeroText = styled.h1`
     color: #fff;
     line-height: 50px;
     text-align: center;
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
 `;
 
 const DownArrowWrapper = styled.div`

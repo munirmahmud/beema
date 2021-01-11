@@ -12,10 +12,10 @@ export const Home = () => {
         <PageContainer>
             <HeroSection />
             <ServicesSection />
-            <Margin direction="vertical" margin="5em" />
+            <Margin direction="vertical" margin={5} />
             <ReviewsSection />
             <AboutSection />
-            <Margin direction="vertical" margin="5.6em" />
+            <Margin direction="vertical" margin={5.6} />
             <Footer />
         </PageContainer>
     );

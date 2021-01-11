@@ -26,6 +26,11 @@ const LogoImg = styled.img`
 
     ${({inline}) => inline && css`width: 30px; height: 30px;margin-right: .6em`};
     ${({small}) => small && css`width: 90px; height: auto;`};
+
+    @media (max-width: 767.98px) {
+        width: ${({inline}) => inline ? "3em" : "5em"};
+        height: ${({inline}) => inline ? "3em" : "5em"};
+    }
 `;
 
 const LogoText = styled.h1`
@@ -33,4 +38,8 @@ const LogoText = styled.h1`
     color:  ${({inline}) => inline ? theme.white : theme.primary};
     font-weight: ${({inline}) => inline ? '700' : '900'};
     line-height: 61px;
+
+    @media (max-width: 767.98px) {
+        font-size: ${({inline}) => inline ? "26px" : "40px"};
+    }
 `;

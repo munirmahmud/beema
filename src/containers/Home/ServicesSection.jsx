@@ -13,7 +13,7 @@ export const ServicesSection = (props) => {
     return (
         <ServiceContainer name="services">
             <Title>Best Quality Software</Title>
-            <Margin direction="vertical" margin="9em" />
+            <Margin direction="vertical" margin={9} />
 
             <Service title="Fully integrated services" description="We build and deliver fully integrated webapps with customized control panels that fit your compnay needs" imgUrl={webDev} />
             <Service isReverse title="Mobile optimized" description="We build and deliver fully integrated webapps with customized control panels that fit your compnay needs" imgUrl={phone} />
@@ -30,4 +30,10 @@ const ServiceContainer = styled(Element)`
     flex-direction: column;
     align-items: center;
     padding: 4em 0;
+
+    @media screen and (max-width: 1199.98px) {
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 `;

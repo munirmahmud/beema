@@ -10,7 +10,7 @@ import { Margin } from '../Margin';
 export const Footer = () => {
     return (
         <FooterContainer>
-            <Margin direction="vertical" margin="5.6em" />
+            <Margin direction="vertical" margin={5.6} />
 
             <FooterWrapper>
                 <Logo small />
@@ -70,6 +70,12 @@ const FooterWrapper = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1199.98px) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 `;
 
 const HeroText = styled.h1`
@@ -78,6 +84,11 @@ const HeroText = styled.h1`
     font-size: 42px;
     line-height: 60px;
     letter-spacing: 0.01em;
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 28px;
+        line-height: 45px;
+    }
 `;
 
 const FooterButton = styled(Button)`
@@ -97,6 +108,10 @@ const FooterBottomWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 1.2em 0;
+
+    @media screen and (max-width: 767.98px) {
+        flex-direction: column;
+    }
 `;
 
 const FooterMenuWrapper = styled.div`
@@ -118,6 +133,10 @@ const MenuLink = styled.a`
 
     &:hover {
         color: #adadad;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 1.5em;
     }
 `;
 
@@ -150,4 +169,5 @@ const CopyRight = styled.p`
     line-height: 15px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    padding-bottom: 2em;
 `;

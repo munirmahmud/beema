@@ -28,10 +28,14 @@ const NavbarContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 767.98px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 `;
 
 const BrandWrapper = styled.div`
-
     a {
         text-decoration: none;
     }
@@ -50,5 +54,9 @@ const LoginButton = styled(Button)`
         background-color: transparent;
         border: none;
         color: rgb(199, 199, 199);
+    }
+
+    @media screen and (max-width: 767.98px) {
+        margin-left: .6em;
     }
 `;

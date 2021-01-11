@@ -25,7 +25,7 @@ export const ReviewsCard = (props) => {
 
 const CardContainer = styled.div`
     width: 456px;
-    height: 522px;
+    min-height: 522px;
     background: #FFFFFF;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -35,6 +35,10 @@ const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media screen and (max-width: 767.98px) {
+        width: 100%;
+    }
 `;
 
 const QuoteIcon = styled.div`
