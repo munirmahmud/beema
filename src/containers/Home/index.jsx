@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Footer } from '../../components/Footer';
 import { Margin } from '../../components/Margin';
 import { AboutSection } from './AboutSection';
 import { HeroSection } from './HeroSection';
@@ -14,6 +15,8 @@ export const Home = () => {
             <Margin direction="vertical" margin="5em" />
             <ReviewsSection />
             <AboutSection />
+            <Margin direction="vertical" margin="5.6em" />
+            <Footer />
         </PageContainer>
     );
 };
