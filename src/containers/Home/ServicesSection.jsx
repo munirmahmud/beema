@@ -16,17 +16,18 @@ export const ServicesSection = (props) => {
             <Margin direction="vertical" margin="9em" />
 
             <Service title="Fully integrated services" description="We build and deliver fully integrated webapps with customized control panels that fit your compnay needs" imgUrl={webDev} />
-            <Service title="Mobile optimized" imgUrl={phone} />
+            <Service isReverse title="Mobile optimized" description="We build and deliver fully integrated webapps with customized control panels that fit your compnay needs" imgUrl={phone} />
             <Service title="Quality is our priority" description="We have teams of professional developers, designers and managers that ensures delivering the best software quality for your company" imgUrl={bugFixing} />
         </ServiceContainer>
     )
 };
 
 const ServiceContainer = styled(Element)`
-    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
     min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3em 0;
+    padding: 4em 0;
 `;

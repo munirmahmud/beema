@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 
 export const Service = (props) => {
-    const {title, description, imgUrl} = props;
+    const {title, description, imgUrl, isReverse} = props;
 
     return (
-        <ServiceWrapper>
+        <ServiceWrapper isReverse={isReverse}>
             <DescriptionWrapper>
                 <Title>{title}</Title>
-                <Details>{description}</Details>
+                {description && <Details>{description}</Details>}
             </DescriptionWrapper>
             <ServiceImg src={imgUrl} alt={title} />
         </ServiceWrapper>
@@ -18,8 +18,10 @@ export const Service = (props) => {
 
 const ServiceWrapper = styled.div`
     display: flex;
+    flex-direction: ${({isReverse}) => isReverse && 'row-reverse'};
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 8em;
 `;
 
 const DescriptionWrapper = styled.div`
@@ -40,9 +42,11 @@ const Details = styled.p`
     color: #7A7A7A;
     font-size: 30px;
     font-weight: 400;
+    width: 78%;
+    align-self: center;
 `;
 
 const ServiceImg = styled.img`
     max-width: 400px;
-    max-height: auto;
+    height: auto;
 `;
